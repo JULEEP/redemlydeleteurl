@@ -13,7 +13,7 @@ const DeleteAccount = () => {
 
     try {
       const response = await axios.post(
-        'https://api.redemly.com/deleteaccount',
+        'https://api.redemly.com/api/users/deleteaccount',
         { email, reason }
       );
       setMessage(response.data.message);

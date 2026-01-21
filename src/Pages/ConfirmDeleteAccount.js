@@ -13,7 +13,7 @@ const ConfirmDeleteAccount = () => {
       setLoading(true);
       try {
         const response = await axios.get(
-          `https://api.redemly.com/confirm-delete-account/${token}`
+          `https://api.redemly.com/api/users/confirm-delete-account/${token}`
         );
 
        if (response.status === 200) {
